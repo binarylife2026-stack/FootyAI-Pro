@@ -18,6 +18,7 @@ export interface GroundingSource {
 export interface AnalysisResponse {
   homeTeam: string;
   awayTeam: string;
+  sport: string;
   categories: PredictionCategory[];
   sources?: GroundingSource[];
 }
@@ -25,5 +26,6 @@ export interface AnalysisResponse {
 export interface MatchInput {
   homeTeam: string;
   awayTeam: string;
+  sport: string;
   league?: string;
 }
